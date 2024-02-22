@@ -28,10 +28,10 @@ jobs:
       # Run Cypress tests
       - name: Run Cypress Tests
         run: npx cypress run
-        with:
-          # No need to specify start and wait-on, as the server is already started and ready
-          record: true
-          parallel: true
+        # with:
+        #   # No need to specify start and wait-on, as the server is already started and ready
+        #   record: true
+        #   parallel: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
