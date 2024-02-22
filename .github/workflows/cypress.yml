@@ -27,7 +27,7 @@ jobs:
       
       # Run Cypress tests
       - name: Run Cypress Tests
-        uses: cypress-io/github-action@v6
+        run: npx cypress run
         with:
           # No need to specify start and wait-on, as the server is already started and ready
           record: true
